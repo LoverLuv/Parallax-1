@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+/* line 1, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/basic-settings.scss */
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+/* line 7, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/basic-settings.scss */
+h1 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: white; }
+
+/* line 16, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/basic-settings.scss */
+h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  color: #323232; }
+
+/* line 25, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/basic-settings.scss */
+h3 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000; }
+
+/* line 34, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/basic-settings.scss */
+p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999; }
+
+/* line 43, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/basic-settings.scss */
+body {
+  overflow-x: hidden; }
+
+/* line 1, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main {
+  min-height: 100vh;
+  background-image: url("../img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* line 9, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__menu {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px; }
+
+/* line 15, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__menu-list {
+  margin-right: 40px; }
+
+/* line 19, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__menu-list:last-child {
+  margin-right: 0px; }
+
+/* line 23, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__menu-link {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 40px;
+  color: white; }
+
+/* line 34, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__menu-link:focus, .main__menu-link:hover {
+  border-bottom: 2px solid #C1CACA;
+  color: #C1CACA;
+  transition: all 0.5s; }
+
+/* line 40, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__menu-link:active {
+  color: #A8A8A8;
+  border-bottom: 2px solid #A5A5A5;
+  transition: none; }
+
+/* line 46, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__line {
+  height: 1px;
+  background: #A1A1A1;
+  opacity: 0.5;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 120px; }
+
+/* line 55, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__text-information {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px; }
+
+/* line 62, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__paragraph {
+  margin-bottom: 20px; }
+
+/* line 66, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.paragraph--white-color {
+  color: white; }
+
+/* line 70, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__title {
+  margin-bottom: 50px; }
+
+/* line 74, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.main__title:after {
+  content: 'Мы создаем легкие решения сложных задач и проблем'; }
+
+/* line 78, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.button {
+  padding: 15px 35px;
+  background: #4985FF;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s; }
+
+/* line 93, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.button--hover:hover, .button--hover:focus {
+  background: #296FFF;
+  transition: all 0.2s;
+  margin-top: -10px;
+  margin-bottom: 10px; }
+
+/* line 100, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+.button--click:active {
+  background: #0054FF; }
+
+@media (max-width: 815px) {
+  /* line 105, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+  .main__title:after {
+    content: 'Название компании'; }
+  /* line 108, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/main.scss */
+  .main__menu {
+    justify-content: space-around; } }
+
+/* line 1, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services {
+  min-height: 700px;
+  text-align: center;
+  background: white; }
+
+/* line 7, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__article-1 {
+  padding-top: 110px;
+  max-width: 740px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+
+/* line 14, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__title {
+  margin-bottom: 50px; }
+
+/* line 18, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__content {
+  padding-bottom: 100px; }
+
+/* line 22, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px; }
+
+/* line 28, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__wrapper {
+  text-align: left;
+  display: flex;
+  margin-right: 40px;
+  text-decoration: none;
+  transition: all 0.2s; }
+
+/* line 36, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__wrapper:hover, .services__wrapper:focus {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: all 0.2s; }
+
+/* line 42, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__wrapper:last-child {
+  margin-right: 0px; }
+
+/* line 46, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__circle-1 {
+  border: 1px solid #999999;
+  border-radius: 50%;
+  padding: 10px; }
+
+/* line 52, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__circle-2 {
+  border: 1px solid #4985FF;
+  border-radius: 50%;
+  padding: 25px; }
+
+/* line 58, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__article-2 {
+  margin-left: 20px;
+  max-width: 250px; }
+
+/* line 63, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+.services__subtitle-h3 {
+  margin-top: 50px;
+  margin-bottom: 10px; }
+
+@media (max-width: 1100px) {
+  /* line 69, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+  .services__content {
+    max-width: 700px;
+    margin: 0 auto; }
+  /* line 74, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+  .services__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* line 80, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+  .services__wrapper {
+    text-align: left;
+    display: flex;
+    margin-right: 0px;
+    margin-bottom: 40px; }
+  /* line 87, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/services.scss */
+  .services__wrapper:last-child {
+    margin-bottom: 0px; } }
+
+/* line 1, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.dev-standard {
+  min-height: 800px;
+  background: #F6F6F8; }
+
+/* line 6, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.dev-standard__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px; }
+
+/* line 12, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.dev-standard__article {
+  padding-top: 50px;
+  max-width: 500px; }
+
+/* line 17, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.dev-standard__title {
+  margin-bottom: 40px; }
+
+/* line 21, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.dev-standard__subtitle {
+  margin-bottom: 30px; }
+
+/* line 25, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.link {
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4985FF;
+  text-decoration: underline; }
+
+/* line 33, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.line {
+  border: 1px solid #E0E0E0;
+  width: 100%; }
+
+/* line 38, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+.dev-standard__line {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+@media (max-width: 1100px) {
+  /* line 44, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/dev-standard.scss */
+  .dev-standard__wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 100px;
+    max-width: 1000px;
+    margin: 0 auto; } }
+
+/* line 1, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-project.scss */
+.our-project {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px; }
+
+/* line 7, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-project.scss */
+.our-project__wrapper {
+  display: flex; }
+
+/* line 11, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-project.scss */
+.our-project__img {
+  margin-right: 20px; }
+
+/* line 15, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-project.scss */
+.subtitle-h3--number {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 53px;
+  color: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4; }
+
+/* line 1, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-work.scss */
+.our-work {
+  height: 490px;
+  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4; }
+
+/* line 6, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-work.scss */
+.block-wrapper {
+  padding-top: 320px; }
+
+/* line 10, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-work.scss */
+.block {
+  background: grey;
+  height: 400px;
+  max-width: 400px; }
+
+/* line 16, E:/Документы/Вёрстка [1 из 2]/BEM + SASS/scss/our-work.scss */
+.our-work-down {
+  min-height: 480px;
+  background: white; }
+/*# sourceMappingURL=style.css.map */

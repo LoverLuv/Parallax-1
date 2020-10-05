@@ -1,0 +1,111 @@
+.main {
+    min-height: 100vh;
+    background-image: url('../img/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+//    background-attachment: fixed;
+}
+
+.main__menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+
+.main__menu-list {
+    margin-right: 40px;
+}
+
+.main__menu-list:last-child {
+    margin-right: 0px;
+}
+
+.main__menu-link {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 40px;
+    color: $c1;
+}
+
+.main__menu-link:focus, .main__menu-link:hover {
+    border-bottom: 2px solid #C1CACA;
+    color: #C1CACA;
+    transition: all 0.5s;
+}
+
+.main__menu-link:active {
+    color: #A8A8A8;
+    border-bottom: 2px solid #A5A5A5;
+    transition: none;
+}
+
+.main__line {
+    height: 1px;
+    background: #A1A1A1;
+    opacity: 0.5;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.main__text-information {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.main__paragraph {
+    margin-bottom: 20px;
+}
+
+.paragraph--white-color {
+    color: $c1;
+}
+
+.main__title {
+    margin-bottom: 50px;
+}
+
+.main__title:after {
+    content: 'Мы создаем легкие решения сложных задач и проблем';
+}
+
+.button {
+    padding: 15px 35px;
+    background: $c4;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    color: $c1;  
+    transition: all 0.2s;
+}
+
+.button--hover:hover, .button--hover:focus {
+    background: #296FFF;
+    transition: all 0.2s;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.button--click:active {
+    background: #0054FF;
+}
+
+@media (max-width: 815px) {
+    .main__title:after {
+        content: 'Название компании';
+    }  
+    .main__menu {
+        justify-content: space-around;
+    }
+}

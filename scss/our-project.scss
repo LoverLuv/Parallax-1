@@ -1,0 +1,23 @@
+.our-project {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.our-project__wrapper {
+    display: flex;
+}
+
+.our-project__img {
+    margin-right: 20px;
+}
+
+.subtitle-h3--number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+
+    color: $c5;
+}
